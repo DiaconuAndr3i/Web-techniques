@@ -1,0 +1,224 @@
+#bara_meniu{
+	display:grid;
+	background:white;
+	position:fixed;
+	opacity: 0.5;
+	z-index:3;
+}
+
+  #bara_meniu:hover{
+	opacity:1;
+}
+
+.functii>a{
+	color:white;
+}
+.functii:hover>a{
+	color:white;
+}
+#programare>a{
+	color: white;
+}
+#programare:hover>a{
+	color:rgb(22, 142, 187);
+	text-decoration: none; 
+}
+
+nav>ul>li>a:hover{
+	text-decoration: none; 
+}
+
+@media screen and (min-width: 900px){
+  #bara_meniu{
+	grid-template-columns: 20% 60% 10% 10%;
+	margin-top:0.5%;
+	height: 6vw;
+	
+  }
+
+nav > ul.meniu > li {
+	display: inline-block;
+	list-style-type:none;
+	vertical-align:top;
+	text-align:center;
+	margin-top: 1vw;
+	font-size: 1.4vw;
+	color: rgb(22, 142, 187);
+	margin-left: 2vw;
+}
+nav > ul.meniu > li > ul.submeniu{
+	visibility: hidden;  
+	opacity: 0;
+	transition: all 1s ease;
+	}
+nav > ul.meniu > li:hover > ul.submeniu{
+	visibility: visible;
+	opacity: 1;
+    transform: translateY(0);
+}
+nav > ul.meniu > li:hover{color: rgb(83, 113, 255);}
+
+ul.submeniu > li{
+	list-style-type:none;
+	width:100%;
+	border:3px solid white;
+	color:white;
+	background-color:rgb(83, 113, 255);
+	border-radius: 8px;
+	padding:1px;
+	margin:auto;
+}
+
+#logo{
+	position:relative;
+	height:auto;
+	width: 20vw;
+	left: 0.5vw;
+}
+
+#programare{
+	border: 1px solid rgb(22, 142, 187);
+	margin: auto;
+	border-radius: 10px;
+	font-size: 1.7vw;
+	color: white;
+	background-color:rgb(22, 142, 187);
+}
+#prog{
+	margin-right:30vw;
+	margin-top:1.4vw;
+	width:9.2vw;
+}
+#programare:hover{
+	color: rgb(22, 142, 187);
+	background-color: white;
+}
+
+#nr_tel{
+	color: rgb(22, 142, 187);
+	text-align:center;
+	margin-top: 1.6vw;
+	font-size: 1.4vw;
+	margin-right: 3vw;
+}
+#nr_tel>ul>li{
+	visibility: hidden;
+	list-style-type:none;
+	width:7vw;
+	border:3px solid white;
+	color:white;
+	background-color:rgb(83, 113, 255);
+	border-radius: 8px;
+	padding:1px;
+	opacity: 0;
+	transition: all 1s ease;
+	font-size:1.2vw;
+	position: relative;
+	right: 2.8vw;
+}
+#nr_tel:hover>ul>li{
+	visibility:visible;
+	opacity: 1;
+    transform: translateY(0);
+}
+#nr_tel:hover{
+	color:rgb(83, 113, 255);
+}
+
+}
+@media screen and (max-width: 899.9px){
+	#bara_meniu{
+	width:100%;
+	height:11vw;
+	margin-top:0.5vw;
+	display: grid;
+	grid-template-columns: auto auto auto;
+  }
+#logo{
+	grid-column: 1/ span 3;
+	position:relative;
+	height:auto;
+	width: 22vw;
+	left: 0.5vw;
+	margin:auto;
+}
+nav>ul.meniu>li{
+	list-style-type:none;
+	vertical-align:top;
+	text-align:center;
+	color: rgb(22, 142, 187);
+	font-size:2vw;
+}
+nav > ul.meniu > li > ul.submeniu{
+	visibility: hidden;  
+	opacity: 0;
+	transition: all 1s ease;}
+
+
+nav > ul.meniu > li:hover > ul.submeniu{
+	visibility: visible;
+	opacity: 1;
+    transform: translateY(0);
+}
+nav > ul.meniu > li:hover{color: rgb(83, 113, 255);}
+ul.submeniu > li{
+	list-style-type:none;
+	width:100%;
+	border:2px solid white;
+	color:white;
+	background-color:rgb(83, 113, 255);
+	border-radius: 8px;
+	padding:1px;
+	margin:auto;
+}
+
+#programare{
+	border: 1px solid rgb(22, 142, 187);
+	margin: auto;
+	border-radius: 7px;
+	font-size: 1.7vw;
+	color: white;
+	background-color:rgb(22, 142, 187);
+}
+#prog{
+	margin-top:1.4vw;
+	width:10vw;
+}
+#programare:hover{
+	color: rgb(22, 142, 187);
+	background-color: white;
+}
+#nr_tel{
+	color: rgb(22, 142, 187);
+	text-align:center;
+	margin-top: 1.6vw;
+	font-size: 1.4vw;
+	width:6vw;
+	margin-right:2.9vw;
+}
+#nr_tel>ul>li{
+	visibility: hidden;
+	list-style-type:none;
+	width:10vw;
+	border:3px solid white;
+	color:white;
+	background-color:rgb(83, 113, 255);
+	border-radius: 8px;
+	padding:1px;
+	opacity: 0;
+	transition: all 1s ease;
+	font-size:1.2vw;
+	position: relative;
+	right: 7vw;
+	margin-right:10%;
+}
+#nr_tel:hover>ul>li{
+	visibility:visible;
+	opacity: 1;
+    transform: translateY(0);
+}
+#nr_tel:hover{
+	color:rgb(83, 113, 255);
+}
+
+}

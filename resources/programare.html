@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proiect</title>
+    <link href="style_programare.css" rel="stylesheet" type="text/css" />
+	<link href="meniu.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="imagini/favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="form.css" rel="stylesheet" type="text/css" />
+	<script src="programare.js"></script>
+	
+</head>
+<body onkeypress="accesari()">
+<div id="bara_meniu">
+
+<img id="logo" src="imagini/logo.png" alt="logo"/>
+
+<nav>
+<ul class="meniu"> 
+<li class="glyphicon glyphicon-home"><a href="paginaprincipala.html"><br>Acasa</a></li>
+<li id="inf" class="glyphicon glyphicon-th"><br>Informatii
+<ul class="submeniu">
+<li class="functii"><a href="istoric.html">Istoric</a></li>
+<li class="functii"><a href="echipament.html">Tehnologii</a></li>
+</ul>
+</li >
+<li class="glyphicon glyphicon-align-justify"><br>Tratamente
+<ul class="submeniu">
+<li class="functii"><a href="https://ro.wikipedia.org/wiki/Implantologie">Implant dentar</a></li>
+<li class="functii"><a href="https://en.wikipedia.org/wiki/Dental_surgery">Chirurgie dentara</a></li>
+<li class="functii"><a href="https://ro.wikipedia.org/wiki/Protetic%C4%83_(stomatologie)">Estetica dentara</a></li>
+<li class="functii"><a href="https://ro.wikipedia.org/wiki/Parodontoz%C4%83">Parodontoza tratament</a></li>
+<li class="functii"><a href="https://ro.wikipedia.org/wiki/Detartraj">Detartraj</a></li>
+</ul>
+</li>
+<li class="glyphicon glyphicon-euro"><br><a href="preturi.html">Preturi</a></li>
+</ul>
+</nav>
+
+<div id="prog"><div id="programare"><a href="programare.html">Programare</a></div></div>
+
+<div id="nr_tel" class="glyphicon glyphicon-earphone"><br>Telefon
+<ul>
+<li>0756723845</li>
+<li>0776123987</li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+<h1 class="animat">Programare</h1><hr id="hr">
+
+
+
+<div id="flex">
+
+<div>
+<div class="cls_flex">Email<br>performance.dental.clinic@gmail.com<br>Contact<br>0756723845<br>0776123987</div>
+<div class="cls_flex">
+<iframe id="if1" style="overflow:hidden;" height="0" width="0"
+src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Bulevardul%20Schitu%20M%C4%83gureanu%207,%20Bucure%C8%99ti%20030167+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+</iframe></div>
+</div>
+
+</div>
+
+
+
+<div class="form-style-5">
+
+<form enctype="multipart/form-data" name="myForm" id="testform" method="post" action="http://localhost:8080/post">
+<fieldset>
+<legend><span class="number">1</span> Date pacient</legend>
+<input type="text" name="field1" placeholder="Nume">
+<input type="text" name="field2" placeholder="Prenume">
+<input type="text" name="field3" placeholder="Telefon">
+<input type="text" name="field4" placeholder="Email">
+<label>Programare pentru:</label>
+<select name="field6">
+  <option value="Consult stomatologic">Consult stomatologic</option>
+  <option value="Stomatologie generală">Stomatologie generala</option>
+  <option value="Chirurgie">Chirurgie</option>
+  <option value="Implantologie">Implantologie</option>
+  <option value="Laser Dentar">Laser Dentar</option>
+  <option value="Protetica Dentara">Protetica Dentara</option>
+  <option value="Parodontologie">Parodontologie</option>
+  <option value="Pedodontie">Pedodontie</option>
+  <option value="Estetica Dentara">Estetica Dentara</option>
+  <option value="Endodontie">Endodontie</option>
+</select>
+<label>Data programarii:</label>
+<input type="date" name="field7">
+<label>Formular de consimtamant informat:</label> 
+<input type="file" name="field8">   
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span>Lasa-ne un mesaj</legend>
+<textarea name="field5" placeholder="Orice informatie concludenta in vederea examenului medical"></textarea>
+</fieldset>
+<label>Campurile din prima sectiune sunt obligatorii</label>
+<label>Campul din a doua sectiune este optional</label>
+<label>Formularul de consimtamant de poate descarca de <a href="http://localhost:8080/files/acord.pdf">aici</a></label>
+<input type="submit" value="Trimite" onclick="return validateForm()"/>
+</form>
+
+</div>
+
+
+
+
+
+
+
+<footer>
+<table id="tabel2">
+<tr class="rand2">
+<td class="col2"><a href="istoric.html">Istoric</a></td>
+<td class="col2" id="lgfn" rowspan="3"><img src="imagini/logo_final.png" alt="logo_final"/></td>
+<td class="col2"><a href="https://ro.wikipedia.org/wiki/Protetic%C4%83_(stomatologie)">Estetica</a></td>
+</tr>
+<tr class="rand2">
+<td class="col2"><a href="echipament.html">Echipament</a></td>
+<td class="col2"><a href="https://ro.wikipedia.org/wiki/Parodontoz%C4%83">Parodontoza</a></td>
+</tr>
+<tr class="rand2">
+<td class="col2"><a href="https://ro.wikipedia.org/wiki/Implantologie">Implant</a></td>
+<td class="col2"><a href="https://ro.wikipedia.org/wiki/Detartraj">Detartraj</a></td>
+</tr>
+<tr class="rand2">
+<td class="col2"><a href="https://en.wikipedia.org/wiki/Dental_surgery">Chirurgie</a></td>
+<td class="col2">2020-2021</td>
+<td class="col2"><a href="preturi.html">Preturi</a></td>
+</tr>
+</table>
+</footer>
+
+
+</body>
+</html>

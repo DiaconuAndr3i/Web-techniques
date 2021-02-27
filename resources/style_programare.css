@@ -1,0 +1,130 @@
+/*FOOTER*/
+#tabel2{
+	top:20vw;
+	position:relative;
+	background-color:green;
+	text-align:center;
+	width:100%;
+	background-color: rgb(83, 113, 255);
+	background-image: linear-gradient(rgb(83, 113, 255),rgb(22, 142, 187));
+	font-family:Comic Sans MS, cursive, sans-serif;
+	font-size:1.3vw;
+	color:white;
+	border-collapse:collapse;
+}
+.col2>a{
+	color:white;
+}
+
+.col2>a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+#lgfn{
+	opacity:0.5;
+	position:relative;
+}
+
+@media screen and (max-width:700px){
+	#tabel2{
+		font-size:3vw;
+	}
+}
+
+/*Backround image*/
+
+body {
+  background-image: url('imagini/fundal.jpg');
+}
+
+
+
+.animat{
+	color:rgb(83, 113, 255);
+	text-align:center;
+	font-family: Verdana, sans-serif;
+	font-size: 3vw;
+	width:25%;
+	left:38%;
+	top:15vw;
+        		position:relative;
+      animation-name: animatie;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      
+                        }
+
+     @keyframes animatie{
+       0% {color:rgb(83, 113, 255);
+            left: -30vw;
+            top: -30vw;}
+       100% {color:rgb(22, 142, 187);
+	   left:50%;
+	   top:15vw;
+			left:38%;
+            transform: rotate(360deg);}
+     }
+
+#hr{
+	margin-top:17vw;
+	background-color:rgb(83, 113, 255);
+	height:2px;
+	width:5%;
+	margin-bottom:3vw;
+}
+
+/*-------------------------------*/
+
+#flex{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+#flex *{
+	flex-basis:400px;
+    flex-grow:1;
+    margin:5px;
+	border-radius:10px;
+	position:relative;
+	top:1.5vw;
+}
+
+
+.cls_flex{
+	font-size:25px;
+	opacity:0.85;
+	font-family: Verdana, sans-serif;
+	text-align:center;
+	color:rgb(22, 142, 187);
+	padding:13% 0;
+}
+
+@media screen and (max-width:700px){
+	.cls_flex{
+		padding:20% 0;
+		font-size:20px;
+	}
+}
+
+#flex>div{
+	display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+	margin:5px;
+}
+
+#flex>div *{
+	flex-basis:400px;
+	flex-grow:1;
+	margin:5px;
+}
+
+#if1{
+width:70%;
+height:250px; 
+border-radius:10px;
+}
+
